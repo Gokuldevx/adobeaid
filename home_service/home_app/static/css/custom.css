@@ -1,0 +1,19 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+.main-menu-item {
+    font-weight: bold;
+    color: black !important;
+}
+
+.main-menu-item:hover {
+    color: black;
+}
+
+.dropdown-menu-item {
+    font-weight: bold;
+    color: black !important;
+}
+
+.dropdown-menu-item:hover {
+    color: black;
+}

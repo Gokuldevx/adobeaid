@@ -1,0 +1,314 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub Service</title>
+</head>
+
+<body>
+    <a href="/services/">Back</a><br>
+    <a href="/sphome/">Home</a><br>
+    <form action="/subserviceaction/">
+
+        <table>
+            <th>Services</th>
+            <tbody>
+                <tr>
+                    <input type="hidden" name="sid" value="{{sid}}">
+                    <td>Sub-Service Name:</td>
+                    <td><input type="text" name="ssname" required></td>
+                </tr>
+
+                <tr>
+                    <td>Description :</td>
+                    <td><textarea name="desc" rows="4" required></textarea></td>
+                </tr>
+                <tr>
+                 
+                    <td>Amount</td>
+                    <td><input type="text" name="amount" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Submit"></td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <table border="1">
+        <tr>
+            <th>Sub-Service Id</th>
+          
+            <th>Sub-Service Name</th>
+            <th>Description</th>
+            <th>Amount</th>
+        </tr>
+
+        {% for i in list %}
+        <tr>
+            
+            <td>{{i.ssid}}</td>
+           
+            <td>{{i.ssname}}</td>
+            <td>{{i.descrip}}</td>
+            <td>{{i.amount}}</td>
+            <td><a href="/updser?id={{i.ssid}}">UPDATE</a></td>
+            
+        </tr>
+        {%endfor%}
+        
+    </table>
+
+</body>
+
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>{ % load static %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Site Metas -->
+    <title>AdobeAid - Home Service Web Application</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="/static/images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/static/images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="/static/css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/static/css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+    <!-- Start Main Top -->
+    <div class="main-top">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+      
+                 
+                  
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+        <div class="login-box">
+         
+        </div>
+                  <div class="text-slid-box">
+                      <div id="offer-box" class="carouselTicker">
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <!-- End Main Top -->
+
+    <!-- Start Main Top -->
+    <header class="main-header">
+        <!-- Start Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+            <div class="container">
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                  <i class="fa fa-bars"></i>
+              </button>
+                  <a class="navbar-brand" href="/index/"><h1>ADOBEAID</h1></a>
+              </div>
+                <!-- End Header Navigation -->
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="navbar-menu">
+					<ul class="nav navbar-nav ml-auto" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li><a href="{% url 'sphome' %}">Home</a></li>
+                        <li><a href="{% url 'editspprofile' %}">Edit Profile</a></li>
+                    <li> <a href="{% url 'addstaff' %}">Staff</a></li>
+                <li> <a href="{% url 'services' %}">Add Services</a></li>
+            <li> <a href="/pendingservice/">pending service</a></li>
+        <li>    <a href="/porder/">Services</a></li>
+    <!-- <li>   <a href="{% url 'vfeedback' %}">View User Feedback</a></li> -->
+    <!-- <li> <a href="{% url 'deletespacc' %}">Delete Account</a>  </li>  -->
+<li>      <a href="{% url 'home' %}">Logout</a></li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+
+                <!-- Start Atribute Navigation -->
+          
+                <!-- End Atribute Navigation -->
+            </div>
+            <!-- Start Side Menu -->
+          
+            <!-- End Side Menu -->
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Main Top -->
+
+    <!-- Start Top Search -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+    <!-- End Top Search -->
+
+    <!-- Start All Title Box -->
+    <div class="all-title-box">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Service Details </h2>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End All Title Box -->
+
+    <!-- Start Contact Us  -->
+    <div class="contact-box-main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-sm-">
+                    <div class="contact-form-right">
+                        <form action="/subserviceaction/">
+                    
+                            <table>
+                                <tbody>
+                                  
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="hidden" id="name" class="form-control"   name="sid" value="{{sid}}">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <input type="text" id="name" class="form-control"   name="ssname"placeholder="Enter  subservicename"  required data-error="Please enter service details">
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                  
+                    
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                <textarea name="desc"class="form-control" rows="3"placeholder="Enter Description"  required data-error="Please enter service details"></textarea>
+                                                <div class="help-block with-errors"></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                        <input type="text" name="amount"  class="form-control" placeholder="Enter Amount"required data-error="Please enter service details">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                               
+                    
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                        <td colspan="2" align="center"><input type="submit" value="Submit"></td>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                </tbody>
+                            </table>
+                        </form>
+                        <h1> Sub Service Details</h1>
+                        <table border="1" style="color:black;width:100%">
+                            <tr style="background-color: chartreuse;color:black">
+                                <th>Sub-Service Id</th>
+          
+            <th>Sub-Service Name</th>
+            <th>Description</th>
+            <th>Amount</th>
+        </tr>
+
+        {% for i in list %}
+        <tr>
+            
+            <td>{{i.ssid}}</td>
+           
+            <td>{{i.ssname}}</td>
+            <td>{{i.descrip}}</td>
+            <td>{{i.amount}}</td>
+            <td><a href="/updser?id={{i.ssid}}">UPDATE</a></td>
+            
+        </tr>
+        {%endfor%}
+        
+    </table>
+             
+                    </div>
+                </div>
+	
+    </div>
+    </div>
+    </div>
+    <!-- End Cart -->
+
+    <!-- Start Instagram Feed  -->
+
+    <!-- End Instagram Feed  -->
+
+
+    <!-- Start Footer  -->
+   
+    <!-- End Footer  -->
+
+    <!-- Start copyright  -->
+    <div class="footer-copyright">
+        <p class="footer-company">All Rights Reserved. &copy; 2018 <a href="#">ThewayShop</a> Design By :
+            <a href="https://html.design/">html design</a></p>
+    </div>
+    <!-- End copyright  -->
+
+    <a href="#" id="back-to-top" title="Back to top" style="display: none;">&uarr;</a>
+
+    <!-- ALL JS FILES -->
+    <script src="/static/js/jquery-3.2.1.min.js"></script>
+    <script src="/static/js/popper.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="/static/js/jquery.superslides.min.js"></script>
+    <script src="/static/js/bootstrap-select.js"></script>
+    <script src="/static/js/inewsticker.js"></script>
+    <script src="/static/js/bootsnav.js."></script>
+    <script src="/static/js/images-loded.min.js"></script>
+    <script src="/static/js/isotope.min.js"></script>
+    <script src="/static/js/owl.carousel.min.js"></script>
+    <script src="/static/js/baguetteBox.min.js"></script>
+    <script src="/static/js/form-validator.min.js"></script>
+    <script src="/static/js/contact-form-script.js"></script>
+    <script src="/static/js/custom.js"></script>
+</body>
+</html>
+

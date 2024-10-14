@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Basic -->
+
+<head>{% load static %}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Site Metas -->
+  <title>AdobeAid - Home Service Web Application</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Site Icons -->
+  <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon">
+  <link rel="apple-touch-icon" href="{% static 'images/apple-touch-icon.png' %}">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+  <!-- Start Main Top -->
+  <div class="main-top">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+
+
+
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div class="login-box">
+
+          </div>
+          <div class="text-slid-box">
+            <div id="offer-box" class="carouselTicker">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Main Top -->
+
+  <!-- Start Main Top -->
+  <header class="main-header">
+    <!-- Start Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-default bootsnav">
+      <div class="container">
+        <!-- Start Header Navigation -->
+        <div class="navbar-header">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu"
+            aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand" href="index.html"><h1>ADOBEAID</h1></a>
+        </div>
+        <!-- End Header Navigation -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link main-menu-item" href="{% url 'custhome' %}">HOME</a>
+                </li>
+              
+                <li class="nav-item">
+                    <a class="nav-link main-menu-item" href="{% url 'editcustprofile' %}">EDIT PROFILE</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle main-menu-item" href="#" id="viewDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">VIEW SERVICE BOOKING DETAILS</a>
+                    <div class="dropdown-menu" aria-labelledby="viewDropdown">
+                        <a class="dropdown-item dropdown-menu-item"  href="{% url 'cvbook' %}">BOOKING DETAILS</a>
+                        <a class="dropdown-item dropdown-menu-item"  href="{% url 'myservice' %}">BOOKING UPDATIONS</a>
+                        <a class="dropdown-item dropdown-menu-item"  href="{% url 'vbstatus' %}">VIEW BOOKING DETAILS</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link main-menu-item" href="{% url 'servicelist' %}">SERVICES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link main-menu-item" href="{% url 'uvReview' %}">VIEW REVIEW</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link main-menu-item" href="{% url 'feedback' %}">ADD FEEDBACK</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link main-menu-item" href="{% url 'home' %}">LOGOUT</a>
+                </li>
+            </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+  </nav>
+  </header>
+  <!-- End Main Top -->
+
+  <!-- Start Top Search -->
+  <div class="top-search">
+    <div class="container">
+        <div class="input-group">
+            <span class="input-group-addon"><i class="fa fa-search"></i></span>
+            <input type="text" class="form-control" placeholder="Search">
+            <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+        </div>
+    </div>
+</div>
+<!-- End Top Search -->
+
+<!-- Start All Title Box -->
+<div class="all-title-box">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+               
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End All Title Box -->
+
+<!-- Start Contact Us  -->
+<div class="contact-box-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-sm-">
+                <div class="contact-form-right">
+                    <form action="/bankaction/">
+                        <table>
+                            <tbody>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="hidden" value="{{uid}}" name="uid" class="uniform-input" />
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" id="name" class="form-control uniform-input" name="bname" placeholder="Enter bank name" required data-error="Please enter details">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" id="name" class="form-control uniform-input" name="aco" maxlength="16" pattern="[0-9]{16}" placeholder="Account Number" required data-error="Please enter details">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" id="name" class="form-control uniform-input" name="co" maxlength="16" pattern="[0-9]{16}" placeholder="Card Number" required data-error="Please enter details">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" id="name" class="form-control uniform-input" name="cv" maxlength="3" pattern="[0-9]{3}" placeholder="Enter CVV Number" required data-error="Please enter details">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="date" id="name" class="form-control uniform-input" name="ep" placeholder="Enter Expiry date" required data-error="Please enter details">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <input type="text" id="name" class="form-control uniform-input" name="amt" pattern="[0-9]+" placeholder="Enter Amount" required data-error="Please enter details">
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <td colspan="2" align="center"><input type="submit" value="Submit" class="uniform-input"></td>
+                                            <div class="help-block with-errors"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </tbody>
+                        </table>
+                    </form>
