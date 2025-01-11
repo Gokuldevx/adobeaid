@@ -61,8 +61,11 @@ CONTACT
 Gokuldev Sudhakaran Ezhava - gokuldevse2001@gmail.com
 
 Connect with me on social media:
+
 <a href="https://www.instagram.com/gokul_27x_/">
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="20" height="20">
+</a><a href="https://www.instagram.com/gokul_27x_/">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Github_icon.png" alt="Instagram" width="20" height="20">
 </a>
 
 Project Link: [https://github.com/Gokuldevx/Home-Service](https://github.com/Gokuldevx/Home-Service)
