@@ -64,8 +64,11 @@ Connect with me on social media:
 
 <a href="https://www.instagram.com/gokul_27x_/">
     <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="20" height="20">
-</a><a href="https://www.instagram.com/gokul_27x_/">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Github_icon.png" alt="Instagram" width="20" height="20">
+</a><a href="https://github.com/Gokuldevx">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub" width="20" height="20">
+</a>
+<a href="https://www.linkedin.com/in/gokuldev-sudhakaran-ezhava-288887316/">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo.svg" alt="LinkedIn" width="20" height="20">
 </a>
 
 Project Link: [https://github.com/Gokuldevx/Home-Service](https://github.com/Gokuldevx/Home-Service)
