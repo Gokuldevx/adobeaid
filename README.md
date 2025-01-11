@@ -1,29 +1,4 @@
-AdobeAid is designed to bridge the gap between customers seeking home services and service providers offering various home maintenance and repair services. The platform allows
-users to conveniently book services such as plumbing, electrical repairs, cleaning, and more, while enabling service providers to manage their offerings and respond to customer
-requests efficiently.
-
-Administrators, who manage the overall functioning of the application. Admins can verify staffs and service providers, oversee service requests, and handle any disputes or
-issues.
-Admins can perform maintenance tasks and ensure the smooth operation of the platform.
-
-The Service Provider Module is designed for professionals offering various home services. It includes functionalities for registration, login, profile management, service 
-management, assign staff, and handling customer requests.
-
-The Staff Module is designed for the staff to Manage their profiles, view the assigned work , view customers details and update work status.
-
-The Customer Module caters to the customers who are seeking home services. This module includes functionalities for user registration, login, profile management, service
-request creation, make payment, view & rate allocated staff and feedback submission. New users can register by providing necessary details, and existing users can log in using
-their credentials. Customers can view and update their profile information. Users can browse available services, select a service, and submit a request. Users can view the
-status of their service requests. After a service is completed, users can provide feedback and rate the service provider.
-
-To access the project , type the following commands in Command Prompt :
-1. pip install django
-2. git clone https://github.com/Gokuldevx/Home-Service.git
-3. python manage.py runserver
-
-
-   Open your web browser and navigate to http:
-   AdobeAid
+ADOBEAID - HOME SERVICE WEB APPLICATION
 
 AdobeAid is designed to bridge the gap between customers seeking home services and service providers offering various home maintenance and repair services. The platform allows
 users to conveniently book services such as plumbing, electrical repairs, cleaning, and more, while enabling service providers to manage their offerings and respond to customer
