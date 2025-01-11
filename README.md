@@ -1,3 +1,5 @@
+## Project Description 
+
 ADOBEAID - HOME SERVICE WEB APPLICATION
 
 AdobeAid is designed to bridge the gap between customers seeking home services and service providers offering various home maintenance and repair services. The platform allows
