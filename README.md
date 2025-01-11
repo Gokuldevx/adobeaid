@@ -56,7 +56,7 @@ status of their service requests. After a service is completed, users can provid
    
       Then open your browser and go to http://127.0.0.1:8000/
 
-CONTACT
+## Contact
 
 Gokuldev Sudhakaran Ezhava - gokuldevse2001@gmail.com
 
