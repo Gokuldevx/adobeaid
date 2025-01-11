@@ -29,22 +29,26 @@ status of their service requests. After a service is completed, users can provid
 ## Installation
 
 1. Clone the repository:
+   
   git clone https://github.com/Gokuldevx/Home-Service.git
+  
   cd yourproject
 
-2. Create a virtual environment:
+3. Create a virtual environment:
+   
    python -m venv venv
 
-3. Activate virtual environment:
+5. Activate virtual environment:
+   
    venv\Scripts\activate
 
-4. Install the required packages:
+7. Install the required packages:
    pip install -r requirements.txt
 
-5. Setup the database
+8. Setup the database
    python manage.py migrate
 
-6. To start the development server, run:
+9. To start the development server, run:
    python manage.py runserver
    Then open your browser and go to http://127.0.0.1:8000/
 
