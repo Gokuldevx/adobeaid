@@ -27,6 +27,7 @@ status of their service requests. After a service is completed, users can provid
 - Django 3.x or 4.x
 - MySQL
 - Django Framework
+- Apache Tomcat Server
 
 ## Installation
 
