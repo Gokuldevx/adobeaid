@@ -53,6 +53,7 @@ status of their service requests. After a service is completed, users can provid
 6. To start the development server, run:
     
       python manage.py runserver
+   
       Then open your browser and go to http://127.0.0.1:8000/
 
 CONTACT
@@ -60,7 +61,10 @@ CONTACT
 Gokuldev Sudhakaran Ezhava - gokuldevse2001@gmail.com
 
 Connect with me on social media:
-[![Instagram](https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png)](https://www.instagram.com/gokul_27x_/)
+<a href="https://www.instagram.com/gokul_27x_/">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="40" height="40">
+</a>
+
 Project Link: [https://github.com/Gokuldevx/Home-Service](https://github.com/Gokuldevx/Home-Service)
 
 
